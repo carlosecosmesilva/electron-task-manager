@@ -1,8 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import { createRoot } from "react-dom/client";
+import TaskManager from "./components/TaskManager"; // Importando o componente
+import "./styles/global.css"; // Importando o arquivo de estilos globais
 
-const rootElement = document.getElementById("app");
-if (rootElement) {
-	ReactDOM.createRoot(rootElement).render(<App />);
-}
+const App = () => {
+    return <TaskManager />; // Renderizando o TaskManager
+};
+
+const container = document.getElementById("root");
+const root = createRoot(container!);
+root.render(<App />);

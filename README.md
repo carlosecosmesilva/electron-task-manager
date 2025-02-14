@@ -1,80 +1,53 @@
 # Electron Task Manager
 
-## Overview
-This is a simple task manager application built using Electron. The project demonstrates how to create a basic desktop app with Electron, featuring task creation and deletion functionality.
+## Description
 
----
+Electron Task Manager is a simple task management application built with Electron, React, and TypeScript. This project aims to provide a cross-platform desktop application for managing tasks efficiently.
 
 ## Features
-- **Add Tasks:** Quickly add tasks to the list.
-- **Remove Tasks:** Delete tasks easily with a remove button.
-- **Clean UI:** Simple and intuitive interface.
 
----
+-   Cross-platform desktop application using Electron
+-   Modern UI with React and TypeScript
+-   Task creation, editing, and deletion
+-   Local storage for task persistence
 
-## Project Structure
-```
-electron-task-manager/
-├── src/
-│   ├── css/
-│   │   └── style.css   # Application styling
-│   └── js/
-│       └── renderer.js # Renderer process for UI logic
-├── index.js         # Main process code
-├── index.html      # Frontend UI
-└── package.json    # Project metadata
-```
+## Installation
 
----
+### Prerequisites
 
-## Prerequisites
-Ensure that you have the following installed:
-- [Node.js](https://nodejs.org/)
+-   [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+-   [Git](https://git-scm.com/)
 
----
+### Steps
 
-## Getting Started
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/electron-task-manager.git
+    cd electron-task-manager
+    ```
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+3. Run the application:
+    ```sh
+    npm run start
+    ```
 
-1. **Clone the Repository:**
-   ```bash
-   git clone <repository_url>
-   cd electron-task-manager
-   ```
+## Scripts
 
-2. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Run the Application:**
-   ```bash
-   npm start
-   ```
-
----
-
-## Usage
-1. Enter a task in the input field.
-2. Click the **Add Task** button to add the task.
-3. Click the **Remove** button next to a task to delete it.
-
----
-
-## File Breakdown
-- **`index.js`**: Manages the Electron app lifecycle and window creation.
-- **`index.html`**: Basic layout of the application.
-- **`src/js/renderer.js`**: Handles task addition and removal logic.
-- **`src/css/style.css`**: Styles the user interface.
-
----
-
-## Future Enhancements
-- Task persistence using local storage or a database.
-- Add task due dates and priority levels.
-- Improved UI with animations.
-
----
+-   `npm run start` - Runs both Electron and React development servers.
+-   `npm run electron` - Starts the Electron main process.
+-   `npm run react` - Starts the React development server.
 
 ## License
-This project is licensed under the MIT License.
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+## Author
+
+[Carlos Eduardo](https://github.com/carlosecosmesilva)
